@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+        body {
+            /* background-image: url('https://media.giphy.com/media/3og0IOu0cvDr9T3rBC/giphy.gif');
+            background-size: 1700px 903px;
+            background-repeat: no-repeat; */
+            /* padding: 0;
+            margin: 0; */
+            background: linear-gradient(114.9deg, rgb(34, 34, 34) 8.3%, rgb(0, 40, 60) 41.6%, rgb(0, 143, 213) 93.4%);
+        }
+
+        .pd {
+            padding-bottom: 100%;
+        }
+
+        .navbar {
+            margin: 0px;
+            padding: 20px;
+
+            font-family: 'Roboto', sans-serif;
+            font-style: italic;
+            font-size: 25px;
+            display: flex;
+            justify-content: end;
+        }
+
+        a {
+            color: white;
+            float: right;
+            text-decoration: none;
+            font-style: normal;
+        }
+
+        a:hover {
+          
+            color: red;
+            border-radius: 8px;
+        }
+
+        a {
+            color: white;
+            float: right;
+            text-decoration: none;
+            font-style: normal;
+            padding-right: 20px;
+        }
+
+        img {
+            width: 1500px;
+            height: 1500px;
+            padding: 10px;
+            margin-top: 0px;
+        }
+
+        h1 {
+            font-size: 50px;
+            text-align: center;
+            color: white;
+             font-family: 'Ubuntu', sans-serif;;
+        }
+        .images{
+            /* display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center; */
+            display: grid;
+            grid-template-columns: 50% 50%;
+            
+            align-items: center;
+
+        }
+        .images_img{
+            border-radius: 20px;
+            height: 30rem;
+            width: 45rem;
+        }
+    </style>
+
+    <title>Info</title>
+</head>
+<nav class="navbar">
+    <a href="/upload">Predict</a>
+    <a href="/info">Info</a>
+    <a href="/about">Home</a>
+</nav>
+
+<body>
+
+        <h1>ECG- Image Based Heartbeat Classification Information Guide</h1>
+        <div class="images">
+            <img src="/static/normal.png" title="normal" class="images_img">
+            <img src="/static/vf.png" title="vf" class="images_img">
+            <img src="/static/pac.png" title="pac" class="images_img">
+            <img src="/static/pvc.png" title="pvc" class="images_img">
+            <img src="/static/rbbb.png" title="rbbb" class="images_img">
+            <img src="/static/lbbb.png" title="lbbb" class="images_img">
+        </div>
+</body>
+
+</html>
